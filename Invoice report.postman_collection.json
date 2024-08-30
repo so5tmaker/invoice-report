@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "63f03b1b-f52a-4b3a-bc01-6ff595a7c2ec",
+		"name": "Invoice report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23191402"
+	},
+	"item": [
+		{
+			"name": "invoices",
+			"item": [
+				{
+					"name": "/invoices/:id nestjs 3000",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/invoices/66d05f3a7d0a444a619b2699",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								"66d05f3a7d0a444a619b2699"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/invoices/ nestjs 300",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/invoices/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/invoices nestjs 3000",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"customer\": \"John Doe\",\n  \"amount\": 250.00,\n  \"reference\": \"INV-12345\",\n  \"date\": \"2024-08-29T00:00:00.000Z\",\n  \"items\": [\n    {\n      \"sku\": \"ITEM001\",\n      \"qt\": 2\n    },\n    {\n      \"sku\": \"ITEM002\",\n      \"qt\": 1\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/invoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
