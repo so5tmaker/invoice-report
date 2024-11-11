@@ -1,11 +1,13 @@
 # Invoice Report Project
 
 ## Overview
-This project consists of two microservices: `invoice-service` and `email-sender-service`. The `invoice-service` is responsible for managing invoices, while the `email-sender-service` handles the sending of emails based on processed messages.
+A full-featured platform for generating and managing invoice reports, built with React and Nest.js. RabbitMQ and MongoDB are containerized and orchestrated through Docker, ensuring smooth communication and efficient data handling.
+This Nest.js project consists of two microservices: `invoice-service` and `email-sender-service`. The `invoice-service` is responsible for managing invoices, while the `email-sender-service` handles the sending of emails based on processed messages.
 
 ## Prerequisites
 
 - Node.js (v14.x or later)
+- Nest.js (v10.x or later)
 - npm
 - Docker (for RabbitMQ and MongoDB)
 
